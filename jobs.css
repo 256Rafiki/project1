@@ -1,0 +1,150 @@
+.body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+body{
+background: url("pics/IMG_E0725.JPG");
+background-size: cover;
+background-repeat: no-repeat;
+background-attachment: fixed;
+overflow: hidden;
+}
+header {
+color: #fff;
+padding: 0px 15px;
+text-align: center;
+width:100%;
+max-width: 1200px;
+margin: 0 auto;
+display: flex;
+align-items: center;
+font-family: Arial, sans-serif;
+justify-content: space-between;
+}
+.header {
+color: white;
+padding: 10px 0;
+}
+.nav-bar{
+display: flex;
+margin-right: 200px;
+display: inline-block;
+justify-content: center;
+}
+.nav-item {
+margin: 0 20px;
+text-decoration: none;
+color: white;
+}
+.nav-item:hover {
+text-decoration: underline;
+}
+input[type="text"] {
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 5px;
+margin-bottom: 5px;
+margin-right: 150px;
+padding-left: 80px;
+cursor: pointer;
+}
+
+h1{
+  margin-bottom: 20px;
+text-align: center;
+color: #ffffff; 
+
+}
+h2 {
+  margin-bottom: 10px;
+text-align: center;
+color: #ffffff;
+}
+.jobs-list-container {
+max-width: 900px;
+margin: 20px auto;
+font-family: Arial, sans-serif;
+}
+
+.jobs-list-container h2 {
+font-size: 30px;
+padding-left: 20px;
+}
+
+.jobs-list-container .jobs {
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+gap: 24px;
+background-color: #d5d3d389;
+}
+
+.jobs-list-container .jobs img {
+width: 60px;
+}
+
+.jobs-list-container .job {
+box-shadow: 0 4px 24px -8px rgba(2, 48, 71, 0.975);
+padding: 24px;
+border-radius: 16px;
+position: relative;
+display: flex;
+flex-direction: column;
+transition: all 400ms ease;
+}
+
+.jobs-list-container .job:hover {
+transform: scale(1.03);
+}
+
+.jobs-list-container .open-positions {
+position: absolute;
+top: 40px;
+right: 24px;
+color: #e63946;
+}
+
+.jobs-list-container .job-title {
+font-size: 20px;
+padding: 10px 0;
+margin: 0;
+color: #ffffff;
+text-shadow: #333;
+}
+
+.jobs-list-container .details {
+margin-top: 6px;
+font-size: 14px;
+color: #333;
+line-height: 1.8;
+flex: 1;
+}
+
+.jobs-list-container .details-btn {
+text-decoration: none;
+border: 1px solid #61b7f6;
+color: #000;
+padding: 8px 16px;
+border-radius: 8px;
+text-align: center;
+margin-top: 20px;
+transition: all 400ms ease;
+}
+
+.jobs-list-container .details-btn:hover {
+background: #30719f;
+color: #fff;
+}
+@media (max-width: 940px) {
+.jobs-list-container .jobs {
+grid-template-columns: 1fr 1fr;
+}
+}
+
+@media (max-width: 640px) {
+.jobs-list-container .jobs {
+grid-template-columns: 1fr;
+max-width: 400px;
+margin: 0 auto;
+}
+}
